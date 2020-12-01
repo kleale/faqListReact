@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Spinner, Alert, Button } from "reactstrap";
 
-import faqList from "./_faqlist";
+import Faqlist from "./_faqlist";
 
 //import Backend from "./backend";
 import ProgressIndicator from "./progressindicator";
@@ -110,11 +110,9 @@ class RegisterPage extends Component {
     if (this.state.lang === "ru") {
       this.setState({ lang: "en" });
       this.updateI18n("en");
-      this.getFunctionsInputData("en");
     } else {
       this.setState({ lang: "ru" });
       this.updateI18n("ru");
-      this.getFunctionsInputData("ru");
     }
   }
 
@@ -139,7 +137,6 @@ class RegisterPage extends Component {
 
   render() {
     let i18n = this.state.i18n;
-    let funcData = this.state.funcData;
     let content = undefined;
 
     switch (this.state.status) {
@@ -157,7 +154,7 @@ class RegisterPage extends Component {
       //   break;
 
       case "FAQList":
-        content = <faqList i18n={i18n} text={i18n.faq.questions}/>;
+        content = <Faqlist i18n={i18n} list={i18n.faq.questions}/>;
         break;
 
       default:

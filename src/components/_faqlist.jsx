@@ -1,15 +1,14 @@
 import React, { Component } from "react";
 
-import { Form, Col, Row, Card, CardBody } from "reactstrap";
+import { Col, Row, Card, CardBody } from "reactstrap";
 
 class RegForm extends Component {
-  form = React.createRef();
 
   state = {
   };
 
   render() {
-    let i18n = this.props.i18n;
+    //let i18n = this.props.i18n;
 
     return (
       <Row>
