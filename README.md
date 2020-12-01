@@ -1,2 +1,2 @@
-# register-gpn
-react form for gpn
+# faq-gpn
+react faq for gpn
