@@ -96,7 +96,7 @@ class RegisterPage extends Component {
   };
 
   handleClickBack() {
-    window.location.assign("/NDI_EPCOMMON_D~gzpn~regform~service~rs~gazprom-neft.ru/rs/regform/");
+    window.location.assign("/NDI_EPCOMMON_D~gzpn~faq~service~rs~gazprom-neft.ru/rs/faq/");
   }
 
   // alert dismiss
@@ -127,7 +127,7 @@ class RegisterPage extends Component {
     } else {
       //SERVER
       this.backend.getI18n(
-        "/NDI_EPCOMMON_D~gzpn~regform~service~rs~gazprom-neft.ru/rs/regform/i18n?lang=" + lang,
+        "/NDI_EPCOMMON_D~gzpn~faq~service~rs~gazprom-neft.ru/rs/faq/i18n?lang=" + lang,
         oI18n => {
           this.setState({ i18n: oI18n.register });
         }
@@ -166,7 +166,7 @@ class RegisterPage extends Component {
         <div className="pt-3">
           <img
             className="d-block ml-auto mr-0 mb-4"
-            src="/NDI_EPCOMMON_D~gzpn~regform~service~rs~gazprom-neft.ru/regform/logo.png"
+            src="/NDI_EPCOMMON_D~gzpn~faq~service~rs~gazprom-neft.ru/faq/logo.png"
             alt="logo"
           />
           <div>
