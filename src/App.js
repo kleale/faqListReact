@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Spinner } from "reactstrap";
 import "./App.css";
-//import Backend from "./components/backend";
+import Backend from "./components/backend";
 import i18n_ru from "./i18n_ru.json";
 import RegisterPage from "./components/_registerpage";
 
@@ -13,7 +13,7 @@ class App extends Component {
       i18n: null,
       lang: "ru",
     };
-    //this.backend = new Backend();
+    this.backend = new Backend();
   }
 
   updateI18n() {
