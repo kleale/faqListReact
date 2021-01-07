@@ -23,7 +23,7 @@ class RegForm extends Component {
                       <h5 className="questionsTitle">{questions.title}</h5>
                     </div>
                     <div className="faq-text">
-                      {questions.text}
+                      <div dangerouslySetInnerHTML={{ __html: questions.text }} />
                     </div>
                   </li>
                 ))}
